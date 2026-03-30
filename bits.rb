@@ -5,21 +5,21 @@
 class Bits < Formula
   desc "bits CLI — cryptocurrency data at your fingertips"
   homepage "https://github.com/mdnmdn/bits"
-  version "0.1.4"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mdnmdn/bits/releases/download/v0.1.4/bits_0.1.4_darwin_amd64.tar.gz"
-      sha256 "cd8c072bf51575a4f5204eed579906a5bc4de16de3be7f26673492efc1d11bd9"
+      url "https://github.com/mdnmdn/bits/releases/download/v0.1.6/bits_0.1.6_darwin_amd64.tar.gz"
+      sha256 "614d26eb2530b2b7b2f7ee6cbe940934e16903fec2e85857585e6447d1e8e511"
 
       define_method(:install) do
         bin.install "bits"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mdnmdn/bits/releases/download/v0.1.4/bits_0.1.4_darwin_arm64.tar.gz"
-      sha256 "39062d028f5fa006a7feafc218ea50c0e38df4d6463ae4cca012f057e8287166"
+      url "https://github.com/mdnmdn/bits/releases/download/v0.1.6/bits_0.1.6_darwin_arm64.tar.gz"
+      sha256 "7e29c62468ff7ec564528825370ed0a6620bca43da5567add20535d223ca24d8"
 
       define_method(:install) do
         bin.install "bits"
@@ -29,15 +29,15 @@ class Bits < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdnmdn/bits/releases/download/v0.1.4/bits_0.1.4_linux_amd64.tar.gz"
-      sha256 "d57a3540e9ac5a59b23bb3c8e8e6c7c8fdf60b98ff2c4c85aceae075c7b61ced"
+      url "https://github.com/mdnmdn/bits/releases/download/v0.1.6/bits_0.1.6_linux_amd64.tar.gz"
+      sha256 "c0572efb7a5d0bd601995bd939787122e69cd62090fce837f89891782fc30cc2"
       define_method(:install) do
         bin.install "bits"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mdnmdn/bits/releases/download/v0.1.4/bits_0.1.4_linux_arm64.tar.gz"
-      sha256 "35b90614a87c5240b6cdcbdd578c0b242c210cb8e8e3c17a351490abbfca145d"
+      url "https://github.com/mdnmdn/bits/releases/download/v0.1.6/bits_0.1.6_linux_arm64.tar.gz"
+      sha256 "e4115a55e1a7cb6bfbc71f0fe9738e99f60c3b5203f36480b0d007b2d2f74699"
       define_method(:install) do
         bin.install "bits"
       end
